@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- *
+ * _printf - imprime format printf
+ * @format: pointer check format
+ * Return: length
  */
 int _printf(const char *format, ...)
 {
@@ -10,7 +12,8 @@ int _printf(const char *format, ...)
 	res = 0;
 	len = 0;
 	va_start(ap, format);
-
+	if (format == NULL)
+		exit(98);
 	for (i = 0; *(format + i) != '\0'; i++)
 	{
 		if (*(format + i) == '%')
