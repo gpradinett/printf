@@ -2,6 +2,6 @@
 
 int print_perc(va_list __attribute__((unused)) p)
 {
-                _putchar('%');
-                        return (1);
-} 
+			_putchar('%');
+			return (1);
+}
